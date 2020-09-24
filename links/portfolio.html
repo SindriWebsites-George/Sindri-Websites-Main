@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Web Design for Marion, Ohio" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Marion, Ohio, Marion Ohio, Web Design, Websites, Design, Web, Sindri Websites, Sindri, Cheap, Affordable, Local"
+    />
+    <meta name="author" content="George Clausing" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sindri Websites | Home</title>
+    <title>Sindri Websites | Portfolio</title>
 
     <link
       rel="stylesheet"
@@ -32,36 +38,75 @@
     ></script>
   </head>
   <body>
-      <div class="desktop">
-        <div id="banner">
-          <img
-            src="../img/HCWhite Sindri_Round.png"
-            class="img-fluid"
-            id="logo"
-            alt="Sindri Website Logo"
-          />
-          <h4 class="display-5">
-            Bringing <em>you</em> to the rest of the world!
-          </h4>
-          <!-- TODO: Replace breaks with proper css-->
-  
-          <div class="navigation">
-            <a href="../index.html" class="site-navigation">
-                <h4 class="display-5">Home</h4>
-              </a>
+    <div class="desktop">
+      <div id="banner">
+        <img
+          src="../img/HCWhite Sindri_Round.png"
+          class="img-fluid"
+          id="logo"
+          alt="Sindri Website Logo"
+        />
+        <h4 class="display-5">
+          Bringing <em>you</em> to the rest of the world!
+        </h4>
+        <!-- TODO: Replace breaks with proper css-->
 
-            <a href="/links/testimonies.html" class="site-navigation">
+        <div class="navigation">
+          <a href="../index.html" class="site-navigation">
+            <h4 class="display-5">Home</h4>
+          </a>
+
+          <!-- <a href="/links/testimonies.html" class="site-navigation">
               <h4 class="display-5">Reviews</h4>
-            </a>
-            
-            <a href="/links/pricing.html" class="site-navigation">
-              <h4 class="display-5">Pricing</h4>
-            </a>
-          </div>
-  
-          <br />
-        </div>
-      </div>
+            </a> -->
 
+          <a href="/links/pricing.html" class="site-navigation">
+            <h4 class="display-5">Pricing</h4>
+          </a>
+        </div>
+
+        <br />
+      </div>
+    </div>
+
+    <div id="mainContent" style="height: 100vh;">
+      <h1 class="display-4" style="text-align: center">Portfolio</h1>
+      <hr />
+      <div class="article">
+        <p class="display-5">
+          Here, you can see our past work so that you know you will be in good
+          hands. We take pride in every website that we help create and won't
+          stop working until it's what you want. Click on one of the ones below to be taken to that website!
+        </p>
+      </div>
+      <div id="desktopOnly">
+        <a href="http://www.paynespizza.com" target="_blank">
+          <img
+            src="../img/paynes-pizza-sample.png"
+            class="desktopImage"
+            alt="Payne's Pizza"
+        /></a>
+        <a href="https://schradercomputer.com/index.html" target="_blank"
+          ><img
+            src="../img/schrader-computer-sample.png"
+            class="desktopImage"
+            alt="Schrader Computer"
+        /></a>
+      </div>
+      <div id="mobileOnly">
+        <a href="http://www.paynespizza.com" target="_blank">
+          <img
+            src="../img/paynesImage.jpg"
+            class="mobileImage"
+            alt="Payne's Pizza"
+        /></a>
+        <a href="https://schradercomputer.com/index.html" target="_blank"
+          ><img
+            src="../img/schrader-computer-sample.png"
+            class="mobileImage"
+            alt="Schrader Computer"
+        /></a>
+      </div>
+    </div>
   </body>
 </html>
