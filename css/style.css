@@ -83,11 +83,18 @@
   height: 45vh;
 }
 
-#pricing{
+#pricingDesktop{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
+#pricingMobile{
+  display: none;
+}
+
+.column{
+  flex-basis: 50%;
+}
 @media screen and (max-width: 767px) {
   .desktop {
     display: flex;
@@ -119,6 +126,15 @@
     background-color: #ebebeb;
   }
 
+  #pricingDesktop{
+    display: none;
+  }
+
+  #pricingMobile{
+    display: flex;
+    flex-direction: column;
+  }
+
   .article {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -143,6 +159,10 @@
     text-emphasis-style: strong;
     text-decoration: none;
     color: #ebebeb;
+  }
+
+  #hideMe{
+    display: none;
   }
 }
 
