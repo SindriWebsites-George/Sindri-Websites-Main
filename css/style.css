@@ -95,6 +95,23 @@
 .column{
   flex-basis: 50%;
 }
+
+#desktopOnly{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#mobileOnly{
+  display: none;
+}
+
+.desktopImage{
+  border: 1px solid black;
+  width: 30vw;
+  height: 40vh;
+}
+
 @media screen and (max-width: 767px) {
   .desktop {
     display: flex;
@@ -163,6 +180,22 @@
 
   #hideMe{
     display: none;
+  }
+
+  #desktopOnly{
+    display: none;
+  }
+
+  #mobileOnly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .mobileImage{
+    border: 1px solid black;
+    width: 40vw;
+    height: 40vh;
   }
 }
 
