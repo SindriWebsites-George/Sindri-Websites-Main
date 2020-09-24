@@ -1,0 +1,159 @@
+.desktop {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Banner Code */
+#banner {
+  background-color: #5f9ea0;
+  flex-basis: 20%;
+  text-align: center;
+  color: #ffffff;
+  height: 100vh;
+  width: 20vw;
+  position: fixed;
+}
+
+#logo {
+  padding: 1em;
+  width: 20vw;
+  height: 30vh;
+}
+
+.spacer {
+  width: 2vw;
+}
+
+.navigation {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-navigation {
+  text-decoration: none;
+  text-emphasis: none;
+  color: #ffffff;
+  margin-top: 2em;
+
+}
+
+.site-navigation:hover {
+  text-emphasis-style: strong;
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+
+/* Main Content Code */
+
+#mainContent {
+  /* Have padding set to zero on mobile */
+  padding: 1em;
+  margin-left: 20vw;
+  display: flex;
+  /* Have as column when mobile */
+  flex-direction: column;
+  background-color: #ebebeb;
+}
+
+.row-one {
+  /* display: inherit;
+    flex-direction: row; */
+  margin-top: 1em;
+}
+
+.article {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  padding-top: 1em;
+}
+
+.contact {
+  margin: auto;
+}
+
+#portfolio {
+  padding-top: 1em;
+}
+
+.portfolioPicture {
+  padding: 1em;
+  width: 45vw;
+  height: 45vh;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: flex;
+    flex-direction: column;
+  }
+  #banner {
+    background-color: #5f9ea0;
+    flex-basis: 20%;
+    text-align: center;
+    color: #ffffff;
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+  }
+
+  #logo {
+    padding: 1em;
+    width: 50vw;
+    height: 40vh;
+  }
+
+  #mainContent {
+    /* Have padding set to zero on mobile */
+    padding: 1em;
+    margin-left: 0vw;
+    display: flex;
+    /* Have as column when mobile */
+    flex-direction: column;
+    background-color: #ebebeb;
+  }
+
+  .article {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .navigation {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .site-navigation {
+    text-decoration: none;
+    text-emphasis: none;
+    color: #ffffff;
+    margin-top: 2em;
+  
+  }
+  
+  .site-navigation:hover {
+    text-emphasis-style: strong;
+    text-decoration: none;
+    color: #ebebeb;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    padding: 1em;
+    width: 20vw;
+    height: 20vh;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  #logo {
+    padding: 1em;
+    width: 20vw;
+    height: 30vh;
+  }
+}

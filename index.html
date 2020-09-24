@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sindri Websites | Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/sindri.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="desktop">
+      <div id="banner">
+        <img
+          src="img/HCWhite Sindri_Round.png"
+          class="img-fluid"
+          id="logo"
+          alt="Sindri Website Logo"
+        />
+        <h4 class="display-5">
+          Bringing <em>you</em> to the rest of the world!
+        </h4>
+        <!-- TODO: Replace breaks with proper css-->
+
+        <!-- <div class="navigation">
+          <a href="/links/testimonies.html" class="site-navigation">
+            <h4 class="display-5">Reviews</h4>
+          </a>
+          <a href="/links/portfolio.html" class="site-navigation">
+            <h4 class="display-5">Portfolio</h4>
+          </a>
+          <a href="/links/pricing.html" class="site-navigation">
+            <h4 class="display-5">Pricing</h4>
+          </a>
+        </div> -->
+
+        <br />
+      </div>
+      <div id="mainContent">
+        <!-- Contact Form -->
+        <div class="contact">
+          <p class="display-4" style="text-align: center">Message Us</p>
+          <p class="display-5" style="text-align: center">
+            Send a message our way and we will get back with you as soon as
+            possible!
+          </p>
+          <form class="emailForm">
+            <div class="form-group">
+              <div class="form-inline">
+                <!-- <label for="firstName">First Name:&nbsp; </label> -->
+
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  class="form-control"
+                  size="15"
+                  maxlength="15"
+                  placeholder="First Name"
+                />
+
+                <div class="spacer"></div>
+
+                <!-- <label for="lastName">Last Name:&nbsp; </label> -->
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  class="form-control"
+                  size="15"
+                  maxlength="15"
+                  placeholder="Last Name"
+                />
+                <!-- <label for="email">eMail: </label> -->
+                <div class="spacer"></div>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  maxlength="33"
+                  placeholder="eMail"
+                />
+              </div>
+              <br />
+
+              <!-- <label for="subject">Subject: </label> -->
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                name="subject"
+                size="40"
+                maxlength="40"
+                placeholder="Subject"
+              />
+              <br />
+              <!-- <label for="message">Write your message here: </label> -->
+              <textarea
+                type="text"
+                id="message"
+                name="message"
+                class="form-control"
+                size="500"
+                rows="2"
+                maxlength="500"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <p style="text-align: center">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="centerMe"
+                onclick="sendEmail()"
+              >
+                Submit
+              </button>
+            </p>
+          </form>
+        </div>
+        <br />
+        <!-- How a website can help you -->
+        <div class="article">
+          <p class="display-4" style="text-align: center">
+            How a Website can Help <em>You</em>
+          </p>
+          <hr />
+          <p>
+            Every day, something related to what you do is looked up. Why
+            shouldn’t they find you? A website lets people know what you can do
+            for them, and how you can help them best. Valued customers seeing
+            their favorite restaurant’s menu online allows them to know the
+            daily special that would go best with their meal for the day. A
+            website allows your customers to see how you’ve been helping the
+            community. It even let’s them know what that community thinks of
+            you.
+            <br />
+            Maybe you don’t need a new website. Maybe all that is missing is
+            being able to view your website on a mobile device comfortably. We
+            make it a priority to design mobile first, going from the smallest
+            screen to the TV, you will feel pride in your website once again!
+          </p>
+        </div>
+
+        <!-- About Us -->
+        <div class="article">
+          <p class="display-4" style="text-align: center">About <em>Us</em></p>
+          <hr />
+          <p>
+            Sindri Websites was started to help bring local businesses onto the
+            web with updated, responsive websites, that get the customer the
+            information they need. We strive to create unique websites for your
+            unique businesses. With no two businesses being the same, you should
+            stand out as much as your shop does.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
