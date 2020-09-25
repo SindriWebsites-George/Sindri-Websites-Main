@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     ></script>
 
+
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
       integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
@@ -33,13 +34,8 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="js/sindri.js"></script>
-    
-
-    
   </head>
+  
   <body>
     <div class="desktop">
       <div id="banner">
@@ -71,85 +67,12 @@
       <div id="mainContent">
         <!-- Contact Form -->
         <div class="contact">
-          <h1 class="display-4" style="text-align: center">Message <em>Us</em></h1>
-          <p class="display-5" style="text-align: center">
-            Send a message our way and we will get back with you as soon as
-            possible!
-          </p>
-          <form class="emailForm">
-            <div class="form-group">
-              <div class="form-inline">
-                <!-- <label for="firstName">First Name:&nbsp; </label> -->
-
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  class="form-control"
-                  size="15"
-                  maxlength="15"
-                  placeholder="First Name"
-                />
-
-                <div class="spacer"></div>
-
-                <!-- <label for="lastName">Last Name:&nbsp; </label> -->
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  class="form-control"
-                  size="15"
-                  maxlength="15"
-                  placeholder="Last Name"
-                />
-                <!-- <label for="email">eMail: </label> -->
-                <div class="spacer"></div>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  maxlength="33"
-                  placeholder="eMail"
-                />
-              </div>
-              <br />
-
-              <!-- <label for="subject">Subject: </label> -->
-              <input
-                type="text"
-                class="form-control"
-                id="subject"
-                name="subject"
-                size="40"
-                maxlength="40"
-                placeholder="Subject"
-              />
-              <br />
-              <!-- <label for="message">Write your message here: </label> -->
-              <textarea
-                type="text"
-                id="message"
-                name="message"
-                class="form-control"
-                size="500"
-                rows="2"
-                maxlength="500"
-                placeholder="Write your message here..."
-              ></textarea>
-            </div>
-            <p style="text-align: center">
-              <button
-                type="submit"
-                class="btn btn-primary"
-                id="centerMe"
-                onclick="sendEmail()"
-              >
-                Submit
-              </button>
-            </p>
-          </form>
+          <div class="container" id="ff-compose"></div>
+          <script
+            async
+            defer
+            src="https://formfacade.com/include/116093931061384763181/form/1FAIpQLSeU8d2NCvpTXNBNNZQZGI5GqQccnfv_iW8RpoEzr30hI0FCRw/bootstrap.js?div=ff-compose"
+          ></script>
         </div>
         <br />
         <!-- How a website can help you -->
